@@ -1,0 +1,54 @@
+.card {
+  width: 45%;
+  height: 130px;
+  border-radius: 10px;
+  text-align: center;
+  background: #000000;
+  color: black;
+  position: relative;
+}
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.card::after,
+.card::before {
+  content: "";
+  position: absolute;
+  height: 101%;
+  width: 101%;
+  background-image: conic-gradient(from var(--angle), transparent 70%, #a2c2e2);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  border-radius: 15px;
+  animation: 5s spin linear infinite;
+  border-radius: 10px;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+.card::before {
+  filter: blur(1rem);
+  opacity: 0.4;
+}
+
+.circular-image {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+.text-small {
+  color: aliceblue;
+}

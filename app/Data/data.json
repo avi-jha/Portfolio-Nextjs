@@ -1,4 +1,7 @@
 {
   "Header": ["home", "work", "blog", "guestbook"],
-  "$schema": {}
+  "intro": {
+    "intro_para_1": "I'm a frontend developer, optimist, and community builder. I currently work as the VP of Product at Vercel, where I help teach the Next.js Next.js community, an open-source web framework built with React.",
+    "intro_para_2": "I create educational content for developers, writing about web development, JavaScript and TypeScript, React and Next.js, and more. This comes in all forms: blog posts, videos, tweets, conference talks, and workshops. You can watch some of my favorites below."
+  }
 }
