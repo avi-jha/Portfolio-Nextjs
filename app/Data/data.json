@@ -1,5 +1,5 @@
 {
-  "Header": ["home", "work", "blog", "guestbook"],
+  "Header": ["home", "work", "blogs", "guestbook"],
   "intro": {
     "intro_para_1": "I'm a frontend developer, optimist, and community builder. I currently work as the software developer at Easebuzz, where I help teach the Next.js community, an open-source web framework built with React.",
     "intro_para_2": "I create educational content for developers, writing about web development, JavaScript and TypeScript, React and Next.js, and more. This comes in all forms: blog posts, videos, tweets, conference talks, and workshops. You can watch some of my favorites below.",
@@ -34,26 +34,91 @@
   },
   "Experience": {
     "Current": {
-      "current_job": "Easebuzz",
-      "current_title": "Software Developer",
-      "current_job_info": "I joined Easebuzz early to grow Next.js and our developer community. I built our Developer Relations team to teach our community about our products.",
+      "company": "Easebuzz",
+      "title": "Software Developer",
+      "info_para_1": "I joined Easebuzz early to grow Next.js and our developer community. I built our Developer Relations team to teach our community about our products.",
       "job_points": [
         "In 2022, I was hired to create a scalable and robust mobile application which was available on iOS and android. .",
         "In 2022, I was promoted to VP of Developer Experience, now also leading our product documentation team. My team created a new free course to teach Next.js, which had 17 million page views that year. I shipped. I partnered with our open-source community, collaborating with frameworks like Nuxt and Astro and sponsoring individuals and projects.",
         "In 2023, I was promoted to VP of Product, now also leading Product Management."
-      ]
+      ],
+      "info_para_2": "Since I joined Easebuzz in 2022, ePOS active users have grown 1000%, now at ~100k. Next.js is now a top 10 software project on GitHub with 124k stars. It's used by Walmart, ChatGPT, Starbucks, Okta,Datastax, Notion, and more."
     },
     "Previous": [
       {
-        "prev_job_1": "Wikasta Business",
-        "prev_title_1": "Product - SEO",
-        "prev_job_info_1": "I joined Easebuzz early to grow Next.js and our developer community. I built our Developer Relations team to teach our community about our products."
+        "prev_job": "Wikasta Business",
+        "prev_title": "Product - SEO",
+        "prev_job_info": [
+          "Hy-Vee, an almost 100-year-old grocery chain in the United States, wanted to build a new version of their digital storefront. I joined a team of product engineers working across web and mobile to rebuild their legacy .NET application (~500k MAU) with React and React Native.",
+          "On the frontend, I led our move from a custom webpack and React configuration to Next.js and the latest React patterns. In the process, I shared my learnings online, helping educate members of the React and Next.js community by creating courses.",
+          "Throughout my two years, I was able to work on some hard problems: decoupling a decade old monolith into microservices, working with a federated GraphQL API, learning and occasionally managing a Kubernetes cluster, building and implementing a design system, incrementally migrating individual components and routes to a new framework and infrastructure, and more."
+        ]
       },
       {
-        "prev_job_2": "Freelancing",
-        "prev_title_2": "Web Developer",
-        "prev_job_info_2": "I joined Easebuzz early to grow Next.js and our developer community. I built our Developer Relations team to teach our community about our products."
+        "prev_job": "Freelancing",
+        "prev_title": "Web Developer, 2019 — 2022",
+        "prev_job_info": [
+          "Workiva ($WK) is a cloud platform for data reporting and compliance. During my time at Workiva, I gained my first production experience using React. I worked on tooling to help predict and alert and regressions in our SaaS platform, building a product similar to open-source tools like Sentry."
+        ]
       }
     ]
-  }
+  },
+  "Blogs": [
+    {
+      "title": "On Developer Marketing",
+      "views": "Aug 2024"
+    },
+    {
+      "title": "Next JS",
+      "views": "Jun 2024"
+    },
+    {
+      "title": "The Easebuzz experience",
+      "views": "Mar 2024"
+    },
+    {
+      "title": "FinTech - The new Tech",
+      "views": "Jan 2024"
+    },
+    {
+      "title": "The Easebuzz experience",
+      "views": "100 views"
+    },
+    {
+      "title": "Experimenting with React Native",
+      "views": "100 views"
+    },
+    {
+      "title": "ePOS Application",
+      "views": "100 views"
+    },
+    {
+      "title": "ePOS Application",
+      "views": "100 views"
+    },
+    {
+      "title": "SDK?? How to develop a kit?",
+      "views": "100 views"
+    },
+    {
+      "title": "MySQL or NoSQL",
+      "views": "100 views"
+    },
+    {
+      "title": "Code editor. Does it matter?",
+      "views": "100 views"
+    },
+    {
+      "title": "What is Internet?",
+      "views": "Jul 2020"
+    },
+    {
+      "title": "Why start with C language?",
+      "views": "Jun 2020"
+    },
+    {
+      "title": "SEO",
+      "views": "Mar 2019"
+    }
+  ]
 }

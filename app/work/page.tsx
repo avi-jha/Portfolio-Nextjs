@@ -2,6 +2,7 @@ import React from "react";
 import JsonData from "../Data/data.json";
 import Link from "next/link";
 import "../styles/customStyles.css";
+import WorkComponent from "../components/workcomponent";
 
 const WorkPage = () => {
   return (
@@ -24,28 +25,35 @@ const WorkPage = () => {
 
         <div className="m-12 mt-10 dash-line" />
 
+        {/* <WorkComponent JsonData={JsonData} /> */}
+
         <div className="m-12 mt-20">
           <p className="text-2xl tracking-wide">
-            {JsonData.Experience.Current.current_job}
+            {JsonData.Experience.Current.company}
           </p>
           <p className="mt-4 small-text tracking-wide">
-            {JsonData.Experience.Current.current_title}
+            {JsonData.Experience.Current.title}
           </p>
-          <p className="mt-10 text-sm">
-            {JsonData.Experience.Current.current_job_info}
-          </p>
+          <p className="mt-10 text-sm leading-relaxed">{JsonData.Experience.Current.info_para_1}</p>
 
-          <ul className="mt-10 ml-5 list-disc text-sm">
+          <ul className="mt-10 ml-5 list-disc text-sm leading-relaxed">
             {JsonData.Experience.Current.job_points.map((data, index) => (
               <li className="m-4" key={`data+${index}`}>
                 {data}
               </li>
             ))}
           </ul>
+
+          <p className="mt-10 text-sm leading-relaxed">{JsonData.Experience.Current.info_para_2}</p>
         </div>
+        <div className="m-12 mt-10 dash-line " />
+
+        {JsonData.Experience.Previous.map((data, index) => (
+          <WorkComponent company={data.prev_job} title={data.prev_title} info_array={data.prev_job_info} />
+        ))}
       </div>
     </main>
-  );
-};
+  )
+}
 
 export default WorkPage;
