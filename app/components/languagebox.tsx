@@ -9,10 +9,13 @@ interface LanguageBoxProps {
 }
 
 const LanguageBox: React.FC<LanguageBoxProps> = ({ imgName, title }) => {
+
+  console.log(imgName)
+
   return (
     <div className="flex flex-row items-center justify-between lng-box mt-4 mr-4">
       <img
-        src={imgName.src}
+        src={`../assets/01.jpg`}
         className="object-cover circular-image mr-8"
         alt={title}
       />

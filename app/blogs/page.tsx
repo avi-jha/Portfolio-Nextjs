@@ -24,7 +24,7 @@ const Blogs = () => {
         </div>
 
         <div>
-          {JsonData.Blogs.map((data, index) => (
+          {JsonData.Blogs.map((data) => (
             <BlogLinks title={data.title} views={data.views} />
           ))}
         </div>

@@ -38,13 +38,11 @@ export default function Home() {
         "
         >
           <IntroCard
-            card_title_1={"@LinkedIN"}
-            card_title_2={"Let's Connect"}
-          />
+            card_title_1={"LinkedIN"}
+            card_title_2={"Let's Connect"} url={"https://www.linkedin.com/in/avi-jha"} />
           <IntroCard
-            card_title_1={"@git-hub"}
-            card_title_2={"See my Projects"}
-          />
+            card_title_1={"Git-Hub"}
+            card_title_2={"See my Projects"} url={"https://github.com/avi-jha"} />
         </div>
 
         <p className="m-12 mt-10 text-sm leading-relaxed">{JsonData.intro.intro_para_3}</p>
@@ -71,6 +69,9 @@ export default function Home() {
             <LanguageBox imgName={sampleImage} title={"Django"} />
             <LanguageBox imgName={sampleImage} title={"Flutter"} />
             <LanguageBox imgName={sampleImage} title={"Node"} />
+            {/* {JsonData.LanguageBox.map((data, index) => (
+              <LanguageBox imgName={data.image} title={data.title} />
+            ))} */}
           </div>
         </div>
 
@@ -84,11 +85,11 @@ export default function Home() {
 
         {/* TODO: add redirection icons */}
         <div className="m-12 flex flex-row">
-          <div>
+          <div className="mt-5">
             <img />
-            <p>Follow me</p>
+            <p>Contact me</p>
           </div>
-          <div>
+          <div className="mt-5 ml-10">
             <img />
             <p>get email updates</p>
           </div>

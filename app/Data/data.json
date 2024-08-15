@@ -1,5 +1,10 @@
 {
-  "Header": ["home", "work", "blogs", "guestbook"],
+  "Header": [
+    "home",
+    "work",
+    "blogs",
+    "guestbook"
+  ],
   "intro": {
     "intro_para_1": "I'm a frontend developer, optimist, and community builder. I currently work as the software developer at Easebuzz, where I help teach the Next.js community, an open-source web framework built with React.",
     "intro_para_2": "I create educational content for developers, writing about web development, JavaScript and TypeScript, React and Next.js, and more. This comes in all forms: blog posts, videos, tweets, conference talks, and workshops. You can watch some of my favorites below.",
@@ -15,20 +20,24 @@
       "subtitle_2": "24,030 views"
     }
   },
-  "LanguageBox": {
-    "image": {
-      "imgName_1": "01.jpg",
-      "imgName_3": "img1",
-      "imgName_2": "img1"
+  "LanguageBox": [
+    {
+      "title": "React",
+      "image": "../assets/01.jpg"
     },
-    "title": {
-      "title_1": "react",
-      "title_2": "python",
-
-      "title_3": "next"
+    {
+      "title": "Django",
+      "views": "../assets/01.jpg"
+    },
+    {
+      "title": "Flutter ",
+      "views": "../assets/01.jpg"
+    },
+    {
+      "title": "Node",
+      "views": "../assets/01.jpg"
     }
-  },
-
+  ],
   "Work": {
     "work_para_1": "On a mission to build products developers love, and along the way, teach the next generation of developers. Here's a summary of my work so far."
   },
@@ -36,13 +45,13 @@
     "Current": {
       "company": "Easebuzz",
       "title": "Software Developer",
-      "info_para_1": "I joined Easebuzz early to grow Next.js and our developer community. I built our Developer Relations team to teach our community about our products.",
+      "info_para_1": "I joined Easebuzz early to grow ePOS application and our developer community. I built our Developer Support team to teach our developers about making our products efficient.",
       "job_points": [
-        "In 2022, I was hired to create a scalable and robust mobile application which was available on iOS and android. .",
-        "In 2022, I was promoted to VP of Developer Experience, now also leading our product documentation team. My team created a new free course to teach Next.js, which had 17 million page views that year. I shipped. I partnered with our open-source community, collaborating with frameworks like Nuxt and Astro and sponsoring individuals and projects.",
-        "In 2023, I was promoted to VP of Product, now also leading Product Management."
+        "In 2022, I was hired to build a scalable mobile app for iOS and Android using a single codebase. I took ownership of the product and integrated key architectures.",
+        "I also played a key role in promoting a merchant-first initiative, collaborating closely with the product team to curate comprehensive documentation for our Mobile SDKs.",
+        "In 2023, I was promoted to Full Stack Developer, where I took on the additional responsibility of working on our Payment Gateway project, built using the Django framework, while also contributing to the expansion of our ePOS modules.."
       ],
-      "info_para_2": "Since I joined Easebuzz in 2022, ePOS active users have grown 1000%, now at ~100k. Next.js is now a top 10 software project on GitHub with 124k stars. It's used by Walmart, ChatGPT, Starbucks, Okta,Datastax, Notion, and more."
+      "info_para_2": "Since I joined Easebuzz in 2022, ePOS active users have grown 1000%, now at ~10k. My initiative of creating a documentation suiting to the merchants reduced support queries by 50%. It's used by Shopify, ZOHO, WIX, IRCTC, Tally, BigBasket, and more."
     },
     "Previous": [
       {
@@ -82,31 +91,23 @@
     },
     {
       "title": "The Easebuzz experience",
-      "views": "100 views"
+      "views": "Nov 2023"
     },
     {
       "title": "Experimenting with React Native",
-      "views": "100 views"
+      "views": "Feb 2023"
     },
     {
       "title": "ePOS Application",
-      "views": "100 views"
+      "views": "Sep 2022"
     },
     {
       "title": "ePOS Application",
-      "views": "100 views"
+      "views": "May 2021"
     },
     {
       "title": "SDK?? How to develop a kit?",
-      "views": "100 views"
-    },
-    {
-      "title": "MySQL or NoSQL",
-      "views": "100 views"
-    },
-    {
-      "title": "Code editor. Does it matter?",
-      "views": "100 views"
+      "views": "Dec 2020"
     },
     {
       "title": "What is Internet?",
@@ -115,6 +116,14 @@
     {
       "title": "Why start with C language?",
       "views": "Jun 2020"
+    },
+    {
+      "title": "MySQL or NoSQL",
+      "views": "Apr 2020"
+    },
+    {
+      "title": "Code editor. Does it matter?",
+      "views": "Aug 2019"
     },
     {
       "title": "SEO",
