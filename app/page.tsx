@@ -3,18 +3,22 @@ import IntroCard from "./components/introcard";
 import LanguageBox from "./components/languagebox";
 import JsonData from "./Data/data.json";
 
+import { FaReact, FaNodeJs } from 'react-icons/fa';
+import { SiPython, SiFlutter } from 'react-icons/si';
+
+
 import sampleImage from "./assets/01.jpg";
 import Link from "next/link";
+import BentArrowIcon from "./components/arrowicon";
 
 export default function Home() {
-
-
   return (
     <main className="flex min-h-screen w-[100%] flex-col items-center p-10">
       <div className="w-[55%]">
         {/* nav bar */}
         <div className="z-10 w-[60%] max-w-5xl font-mono text-sm lg:flex m-10">
           <ul className="flex flex-row ">
+            {/* TODO: add guestbook or contact me */}
             {JsonData.Header.map((data, index) => (
               <li className="px-4" key={index}>
                 <Link href={data === "home" ? "/" : `/${data}`}>{data}</Link>
@@ -34,8 +38,7 @@ export default function Home() {
         <p className="m-12 mt-10 text-sm leading-relaxed">{JsonData.intro.intro_para_2}</p>
 
         <div
-          className="m-12 mt-10 flex flex-row justify-between items-center w-fill
-        "
+          className="m-12 mt-10 flex flex-row justify-between items-center w-fill"
         >
           <IntroCard
             card_title_1={"LinkedIN"}
@@ -85,13 +88,17 @@ export default function Home() {
 
         {/* TODO: add redirection icons */}
         <div className="m-12 flex flex-row">
-          <div className="mt-5">
-            <img />
-            <p>Contact me</p>
+          <div className="mt-5 ">
+            <Link href="" className="contact-me  flex flex-row">
+              <BentArrowIcon />
+              <p className=" contact-me text-slate-400">contact me</p>
+            </Link>
           </div>
-          <div className="mt-5 ml-10">
-            <img />
-            <p>get email updates</p>
+          <div className="mt-5 ml-8">
+            <Link href="" className="contact-me  flex flex-row">
+              <BentArrowIcon />
+              <p className=" contact-me text-slate-400">get email updates</p>
+            </Link>
           </div>
         </div>
       </div>

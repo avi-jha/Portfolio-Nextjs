@@ -90,3 +90,7 @@
 .para-text-color {
   color: rgb(196, 196, 197);
 }
+
+.contact-me:hover {
+  color: white;
+}
