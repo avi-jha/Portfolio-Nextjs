@@ -63,18 +63,12 @@ export default function Home() {
 
         <div className="m-12">
           <p className="text-sm leading-relaxed">
-            I invest small angel checks into early stage startups building tools
-            for developers.
+            I have worked with the following technologies. Learning and implementing new theories to the test.
           </p>
-          {/* TODO: optimize this code */}
           <div className="flex flex-row items-center justify-start">
-            <LanguageBox imgName={sampleImage} title={"React"} />
-            <LanguageBox imgName={sampleImage} title={"Django"} />
-            <LanguageBox imgName={sampleImage} title={"Flutter"} />
-            <LanguageBox imgName={sampleImage} title={"Node"} />
-            {/* {JsonData.LanguageBox.map((data, index) => (
-              <LanguageBox imgName={data.image} title={data.title} />
-            ))} */}
+            {JsonData.LanguageBox.map((data, index) => (
+              <LanguageBox title={data} />
+            ))}
           </div>
         </div>
 
