@@ -25,13 +25,11 @@ const WorkPage = () => {
 
         <div className="m-12 mt-10 dash-line" />
 
-        {/* <WorkComponent JsonData={JsonData} /> */}
-
         <div className="m-12 mt-20">
           <p className="text-2xl tracking-wide">
             {JsonData.Experience.Current.company}
           </p>
-          <p className="mt-4 small-text tracking-wide">
+          <p className="mt-4 text-sm text-stone-500 tracking-wide">
             {JsonData.Experience.Current.title}
           </p>
           <p className="mt-10 text-sm leading-relaxed">{JsonData.Experience.Current.info_para_1}</p>

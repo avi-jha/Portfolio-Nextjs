@@ -3,11 +3,6 @@ import IntroCard from "./components/introcard";
 import LanguageBox from "./components/languagebox";
 import JsonData from "./Data/data.json";
 
-import { FaReact, FaNodeJs } from 'react-icons/fa';
-import { SiPython, SiFlutter } from 'react-icons/si';
-
-
-import sampleImage from "./assets/01.jpg";
 import Link from "next/link";
 import BentArrowIcon from "./components/arrowicon";
 

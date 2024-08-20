@@ -14,7 +14,7 @@ const WorkComponent: React.FC<WorkComponentProps> = (props) => {
       <p className="text-2xl tracking-wide">
         {company}
       </p>
-      <p className="mt-4 small-text tracking-wide">
+      <p className="mt-4 text-sm text-stone-500 tracking-wide">
         {title}
       </p>
 
