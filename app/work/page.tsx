@@ -10,17 +10,20 @@ const WorkPage = () => {
       <div className="w-[55%]">
         {/* nav bar */}
         <div className="z-10 w-[60%] max-w-5xl font-mono text-sm lg:flex m-10">
-          <ul className="flex flex-row ">
+          <ul className="flex flex-row">
             {JsonData.Header.map((data, index) => (
-              <li className="px-4" key={index}>
-                <Link href={data === "home" ? "/" : `/${data}`}>{data}</Link>
+              <li className="px-4" key={index + data}>
+                <Link href={data === "home" ? "/" : `/${data}`}>
+                  {data}
+                </Link>
               </li>
             ))}
           </ul>
         </div>
+
         <div className="m-12 mt-20">
           <p className="text-2xl">my work</p>
-          <p className="mt-10 text-sm ">{JsonData.Work.work_para_1}</p>
+          <p className="mt-10 text-sm">{JsonData.Work.work_para_1}</p>
         </div>
 
         <div className="m-12 mt-10 dash-line" />
@@ -36,7 +39,7 @@ const WorkPage = () => {
 
           <ul className="mt-10 ml-5 list-disc text-sm leading-relaxed">
             {JsonData.Experience.Current.job_points.map((data, index) => (
-              <li className="m-4" key={`data+${index}`}>
+              <li className="m-4" key={`current_job_point_${index}`}>
                 {data}
               </li>
             ))}
@@ -44,14 +47,19 @@ const WorkPage = () => {
 
           <p className="mt-10 text-sm leading-relaxed">{JsonData.Experience.Current.info_para_2}</p>
         </div>
-        <div className="m-12 mt-10 dash-line " />
+        <div className="m-12 mt-10 dash-line" />
 
         {JsonData.Experience.Previous.map((data, index) => (
-          <WorkComponent company={data.prev_job} title={data.prev_title} info_array={data.prev_job_info} />
+          <WorkComponent
+            key={`previous_experience_${index}`}
+            company={data.prev_job}
+            title={data.prev_title}
+            info_array={data.prev_job_info}
+          />
         ))}
       </div>
     </main>
-  )
-}
+  );
+};
 
 export default WorkPage;

@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface ImageProps {
   firstImage: StaticImageData;
@@ -11,7 +11,7 @@ const TwinImage: React.FC<ImageProps> = (props) => {
 
   return (
     <div>
-      <img src={firstImage.src} className="circular-image mr-4" alt={""} />
+      <Image src={firstImage.src} className="circular-image mr-4" alt={""} />
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import JsonData from '../Data/data.json'
+import JsonData from '../Data/data.json';
 import Link from "next/link";
 import BlogLinks from "../components/bloglinks";
 
@@ -9,10 +9,12 @@ const Blogs = () => {
       <div className="w-[55%]">
         {/* nav bar */}
         <div className="z-10 w-[60%] max-w-5xl font-mono text-sm lg:flex m-10">
-          <ul className="flex flex-row ">
+          <ul className="flex flex-row">
             {JsonData.Header.map((data, index) => (
-              <li className="px-4" key={index}>
-                <Link href={data === "home" ? "/" : `/${data}`}>{data}</Link>
+              <li className="px-4" key={index + data}>
+                <Link href={data === "home" ? "/" : `/${data}`}>
+                  {data}
+                </Link>
               </li>
             ))}
           </ul>
@@ -24,13 +26,17 @@ const Blogs = () => {
         </div>
 
         <div>
-          {JsonData.Blogs.map((data) => (
-            <BlogLinks title={data.title} views={data.views} />
+          {JsonData.Blogs.map((data, index) => (
+            <BlogLinks
+              key={`blog_${index}`}
+              title={data.title}
+              views={data.views}
+            />
           ))}
         </div>
       </div>
     </main>
-  )
-}
+  );
+};
 
 export default Blogs;
