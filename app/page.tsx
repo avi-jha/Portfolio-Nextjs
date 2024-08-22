@@ -13,10 +13,12 @@ export default function Home() {
         {/* nav bar */}
         <div className="z-10 w-[60%] max-w-5xl font-mono text-sm lg:flex m-10">
           <ul className="flex flex-row ">
-            {/* TODO: add guestbook or contact me */}
             {JsonData.Header.map((data, index) => (
               <li className="px-4" key={index}>
-                <Link href={data === "home" ? "/" : `/${data}`}>{data}</Link>
+                {/* TODO: add "Blogs" on nav bar */}
+                <Link href={data === "home" ? "/" : `/${data}`}>
+                  {data}
+                </Link>
               </li>
             ))}
           </ul>

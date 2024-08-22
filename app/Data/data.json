@@ -2,11 +2,10 @@
   "Header": [
     "home",
     "work",
-    "blogs",
     "contact"
   ],
   "intro": {
-    "intro_para_1": "I'm a frontend developer, optimist, and community builder. I currently work as the software developer at Easebuzz, where I help teach the Next.js community, an open-source web framework built with React.",
+    "intro_para_1": "I'm a frontend developer, optimist, and community builder. I currently work as the software developer at Easebuzz, where I help develop the mobile applications and Payment Gateway frameworks, a multi-platform framework built with Swift.",
     "intro_para_2": "I create educational content for developers, writing about web development, JavaScript and TypeScript, React and Next.js, and more. This comes in all forms: blog posts, videos, tweets, conference talks, and workshops. You can watch some of my favorites below.",
     "intro_para_3": "Over the past decade, I've written content on my blog and newsletter. I try to keep things simple. You'll find writing about technologies I'm interested in at the time, or how I'm learning and growing in my career, sharing knowledge along the way."
   },
