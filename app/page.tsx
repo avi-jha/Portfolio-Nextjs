@@ -30,7 +30,7 @@ export default function Home() {
           <p className="mt-8 text-sm leading-relaxed">{JsonData.intro.intro_para_1}</p>
         </div>
 
-        <div className="m-12 mt-10 h-96 bg-blue-50"></div>
+        {/* <div className="m-12 mt-10 h-96 bg-blue-50"></div> */}
 
         <p className="m-12 mt-10 text-sm leading-relaxed">{JsonData.intro.intro_para_2}</p>
 
@@ -47,7 +47,7 @@ export default function Home() {
 
         <p className="m-12 mt-10 text-sm leading-relaxed">{JsonData.intro.intro_para_3}</p>
 
-        <div className="m-12 flex flex-col items-center w-fill">
+        {/* <div className="m-12 flex flex-col items-center w-fill">
           <DataCard
             title={JsonData.DataCard.title.title_1}
             subtitle={JsonData.DataCard.subtitle.subtitle_1}
@@ -56,7 +56,7 @@ export default function Home() {
             title={JsonData.DataCard.title.title_2}
             subtitle={JsonData.DataCard.subtitle.subtitle_2}
           />
-        </div>
+        </div> */}
 
         <div className="m-12">
           <p className="text-sm leading-relaxed">
@@ -80,7 +80,7 @@ export default function Home() {
         {/* TODO: add redirection icons */}
         <div className="m-12 flex flex-row">
           <div className="mt-5 ">
-            <Link href="" className="contact-me flex flex-row">
+            <Link href="/contact" className="contact-me flex flex-row">
               <BentArrowIcon />
               <p className=" contact-me text-slate-400">contact me</p>
             </Link>

@@ -5,9 +5,9 @@
     "contact"
   ],
   "intro": {
-    "intro_para_1": "I'm a frontend developer, optimist, and community builder. I currently work as the software developer at Easebuzz, where I help develop the mobile applications and Payment Gateway frameworks, a multi-platform framework built with Swift.",
-    "intro_para_2": "I create educational content for developers, writing about web development, JavaScript and TypeScript, React and Next.js, and more. This comes in all forms: blog posts, videos, tweets, conference talks, and workshops. You can watch some of my favorites below.",
-    "intro_para_3": "Over the past decade, I've written content on my blog and newsletter. I try to keep things simple. You'll find writing about technologies I'm interested in at the time, or how I'm learning and growing in my career, sharing knowledge along the way."
+    "intro_para_1": "I'm a frontend developer, optimist, and tech enthusiast. I currently work as the software developer at Easebuzz, where I help develop the mobile applications and Payment Gateway frameworks, a multi-platform framework built with Swift.",
+    "intro_para_2": "I have contributed extensively in our ePOS mobile application, adding advanced tools and features like internationalization. Making our app available to many local businesses across India.",
+    "intro_para_3": "Over the past 2 years, I've developed frameworks using Swift for the merchants who want to integrate our Payment Gateway into their applications.I am currently organizing my blogs which will be available soon on this website, they include tech news or how I'm learning and growing in my career, sharing knowledge along the way."
   },
   "DataCard": {
     "title": {
@@ -34,27 +34,28 @@
       "title": "Software Developer",
       "info_para_1": "I joined Easebuzz early to grow ePOS application and our developer community. I built our Developer Support team to teach our developers about making our products efficient.",
       "job_points": [
-        "In 2022, I was hired to build a scalable mobile app for iOS and Android using a single codebase. I took ownership of the product and integrated key architectures.",
+        "In 2024, I was promoted to SDE 2 - Fullstack Developer as i endued my expertise in working with DJango framework. I wrote test-cases for the 'Seamless APIs' in the gateway team. Focusing on providing end to end clarity on our Payment Gateway APIs.",
+        "In 2023, I was provided the sole ownership of out ePOS product, where I took on the additional responsibility of expanding our users of ePOS app, built using the React Native framework. I added features like internationalization, a user focused UI, and starting a culture of writing cleaner code.",
         "I also played a key role in promoting a merchant-first initiative, collaborating closely with the product team to curate comprehensive documentation for our Mobile SDKs.",
-        "In 2023, I was promoted to Full Stack Developer, where I took on the additional responsibility of working on our Payment Gateway project, built using the Django framework, while also contributing to the expansion of our ePOS modules.."
+        "In 2022, I was hired to build a scalable mobile app for iOS and Android using a single codebase. I took ownership of the product and integrated key architectures."
       ],
-      "info_para_2": "Since I joined Easebuzz in 2022, ePOS active users have grown 1000%, now at ~10k. My initiative of creating a documentation suiting to the merchants reduced support queries by 50%. It's used by Shopify, ZOHO, WIX, IRCTC, Tally, BigBasket, and more."
+      "info_para_2": "Since I joined Easebuzz in 2022, ePOS active users have grown 1000%, now at ~10k. My initiative of creating a documentation suiting to the merchants reduced support queries by 50%. It's used by Shopify, ZOHO, WIX, IRCTC, Tally, BigBasket, CDHL and more."
     },
     "Previous": [
       {
         "prev_job": "Wikasta Business",
         "prev_title": "Product - SEO",
         "prev_job_info": [
-          "Hy-Vee, an almost 100-year-old grocery chain in the United States, wanted to build a new version of their digital storefront. I joined a team of product engineers working across web and mobile to rebuild their legacy .NET application (~500k MAU) with React and React Native.",
-          "On the frontend, I led our move from a custom webpack and React configuration to Next.js and the latest React patterns. In the process, I shared my learnings online, helping educate members of the React and Next.js community by creating courses.",
-          "Throughout my two years, I was able to work on some hard problems: decoupling a decade old monolith into microservices, working with a federated GraphQL API, learning and occasionally managing a Kubernetes cluster, building and implementing a design system, incrementally migrating individual components and routes to a new framework and infrastructure, and more."
+          "I was a SEO manager. I worked to increase the visibility of the website to potential users. The task involved increasing the rating on google searches and writing creative blogs, a habit i have embodied at my current work too.",
+          "On the frontend, I led a team on creating engaging posts and writing about new technologies. In the process, I shared my learnings online, helping educate members of the developer community by creating blogs on Wikasta.",
+          "Throughout my internship period, I was able to work on some hard problems: how to attract users to stay on our page, learn about different languages and their pros or cons."
         ]
       },
       {
         "prev_job": "Freelancing",
-        "prev_title": "Web Developer, 2019 — 2022",
+        "prev_title": "Web Developer / Sales, 2020 — 2021",
         "prev_job_info": [
-          "Workiva ($WK) is a cloud platform for data reporting and compliance. During my time at Workiva, I gained my first production experience using React. I worked on tooling to help predict and alert and regressions in our SaaS platform, building a product similar to open-source tools like Sentry."
+          "I always have wanted to create, collaborate and work on projects that people love. I have created many projects for free to empower small scale startups. But one special one comes to mind where I teamed up with my brother to create a delivery app for alcohol. It was a new initiative which propelled us into learning about many things that aren't visible from the outside. I had to get out of my comfort zone and approach shop owners across Mumbai metropolitan region to get them to sign with us. Sadly, we had to close down our project due to lack of funds and other bottlenecks."
         ]
       }
     ]
@@ -118,8 +119,8 @@
     }
   ],
   "Contact": [
-    "What should i call you?? 📞",
-    "Email please?? ✉️",
-    "Any message for me? 💬"
+    "Name",
+    "Email",
+    "Message"
   ]
 }
