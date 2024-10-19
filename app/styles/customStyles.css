@@ -17,14 +17,13 @@
 .card::before {
   content: "";
   position: absolute;
-  height: 101%;
+  height: 102%;
   width: 101%;
   background-image: conic-gradient(from var(--angle), transparent 70%, #a2c2e2);
   top: 50%;
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
-
   animation: 5s spin linear infinite;
   border-radius: 10px;
 }
