@@ -1,5 +1,5 @@
 import DataCard from "./components/datacard";
-import IntroCard from "./components/introcard";
+import LinksCard from "./components/linkscard";
 import LanguageBox from "./components/languagebox";
 import JsonData from "./Data/data.json";
 
@@ -35,11 +35,11 @@ export default function Home() {
         <p className="m-12 mt-10 text-sm leading-relaxed">{JsonData.intro.intro_para_2}</p>
 
         <div className="m-12 mt-10 flex flex-row justify-between items-center w-fill">
-          <IntroCard
+          <LinksCard
             card_title_1={"LinkedIN"}
             card_title_2={"Let's Connect"}
             url={"https://www.linkedin.com/in/avi-jha"} />
-          <IntroCard
+          <LinksCard
             card_title_1={"Git-Hub"}
             card_title_2={"See my Projects"}
             url={"https://github.com/avi-jha"} />
