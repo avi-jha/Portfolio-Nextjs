@@ -78,7 +78,7 @@ export default function Home() {
         </div>
 
         {/* TODO: add redirection icons */}
-        <div className="m-12 flex flex-row">
+        {/* <div className="m-12 flex flex-row">
           <div className="mt-5 ">
             <Link href="/contact" className="contact-me flex flex-row">
               <BentArrowIcon />
@@ -91,7 +91,7 @@ export default function Home() {
               <p className=" contact-me text-slate-400">get email updates</p>
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
     </main>
   );
