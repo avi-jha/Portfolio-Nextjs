@@ -7,10 +7,10 @@ import WorkComponent from "../components/workcomponent";
 const WorkPage = () => {
   return (
     <main className="flex min-h-screen w-[100%] flex-col items-center p-10">
-      <div className="w-[55%]">
+      <div className="w-full md:w-[90%] lg:w-[55%]">
         {/* nav bar */}
-        <div className="z-10 w-[60%] max-w-5xl font-mono text-sm lg:flex m-10">
-          <ul className="flex flex-row">
+        <div className="z-10 w-full md:w-[90%] lg:w-[60%] max-w-5xl font-mono text-sm lg:flex">
+          <ul className="flex flex-wrap md:flex-row">
             {JsonData.Header.map((data, index) => (
               <li className="px-4" key={index + data}>
                 <Link href={data === "home" ? "/" : `/${data}`}>
@@ -21,21 +21,21 @@ const WorkPage = () => {
           </ul>
         </div>
 
-        <div className="m-12 mt-20">
+        <div className="m-4 md:m-12 mt-10 md:mt-20">
           <p className="text-2xl">my work</p>
-          <p className="mt-10 text-sm">{JsonData.Work.work_para_1}</p>
+          <p className="mt-8 text-sm leading-relaxed">{JsonData.Work.work_para_1}</p>
         </div>
 
-        <div className="m-12 mt-10 dash-line" />
+        <div className="lg:m-12 mt-10 dash-line w-full" />
 
-        <div className="m-12 mt-20">
-          <p className="text-2xl tracking-wide">
+        <div className="m-4 md:m-12 mt-10 md:mt-20">
+          <p className="mt-8 text-base lg:text-xl leading-relaxed">
             {JsonData.Experience.Current.company}
           </p>
           <p className="mt-4 text-sm text-stone-500 tracking-wide">
             {JsonData.Experience.Current.title}
           </p>
-          <p className="mt-10 text-sm leading-relaxed">{JsonData.Experience.Current.info_para_1}</p>
+          <p className="mt-8 text-sm leading-relaxed">{JsonData.Experience.Current.info_para_1}</p>
 
           <ul className="mt-10 ml-5 list-disc text-sm leading-relaxed">
             {JsonData.Experience.Current.job_points.map((data, index) => (

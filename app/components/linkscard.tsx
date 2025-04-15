@@ -10,7 +10,7 @@ interface LinksCardProps {
 
 const LinksCard: React.FC<LinksCardProps> = ({ card_title_1, card_title_2, url }) => {
   return (
-    <div className="card normal-card flex items-center">
+    <div className="card normal-card flex items-center mt-10 min-w-full lg:min-w-fit">
       <a
         target="_blank"
         href={url}

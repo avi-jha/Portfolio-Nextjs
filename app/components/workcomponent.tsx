@@ -10,8 +10,8 @@ const WorkComponent: React.FC<WorkComponentProps> = (props) => {
   const { company, title, info_array } = props;
 
   return (
-    <div className="m-12 mt-20">
-      <p className="text-2xl tracking-wide">
+    <div className="m-4 md:m-12 mt-10 md:mt-20">
+      <p className="mt-8 text-base lg:text-xl leading-relaxed">
         {company}
       </p>
       <p className="mt-4 text-sm text-stone-500 tracking-wide">
