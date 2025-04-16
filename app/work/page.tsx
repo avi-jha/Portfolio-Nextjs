@@ -21,7 +21,7 @@ const WorkPage = () => {
           </ul>
         </div>
 
-        <div className="m-4 md:m-12 mt-10 md:mt-20">
+        <div className="m-4 md:m-12 mt-20 md:mt-20">
           <p className="text-2xl">my work</p>
           <p className="mt-8 text-sm leading-relaxed">{JsonData.Work.work_para_1}</p>
         </div>

@@ -122,5 +122,11 @@
     "Name",
     "Email",
     "Message"
-  ]
+  ],
+  "Form": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Submit"
+  }
 }

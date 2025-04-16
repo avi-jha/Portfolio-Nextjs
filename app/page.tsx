@@ -25,7 +25,7 @@ export default function Home() {
         </div>
 
         {/* body */}
-        <div className="m-4 md:m-12 mt-10 md:mt-20">
+        <div className="m-4 md:m-12 mt-20 md:mt-20 ">
           <p className="text-2xl">hey, i am Avi 👋🏻</p>
           <p className="mt-8 sm:text-sm leading-relaxed">{JsonData.intro.intro_para_1}</p>
         </div>
