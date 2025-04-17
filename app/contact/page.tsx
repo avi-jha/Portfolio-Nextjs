@@ -24,7 +24,7 @@ const ContactPage = () => {
     ]
 
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-        e.preventDefault();
+        // e.preventDefault();
         const form = e.currentTarget;
 
         const response = await fetch("https://api.web3forms.com/submit", {
@@ -37,8 +37,8 @@ const ContactPage = () => {
                 access_key: "d49ad116-d70f-4dbc-8f95-bcec3dae180a",
                 name: (form.elements.namedItem("Name") as HTMLInputElement).value,
                 email: (form.elements.namedItem("Email Id") as HTMLInputElement).value,
-                jobTitle: (form.elements.namedItem("Email Id") as HTMLInputElement).value,
-                message: (form.elements.namedItem("Job Title") as HTMLTextAreaElement).value,
+                jobTitle: (form.elements.namedItem("Job Title") as HTMLInputElement).value,
+                message: (form.elements.namedItem("Any Message or suggestion?") as HTMLTextAreaElement).value,
             }),
         });
 
