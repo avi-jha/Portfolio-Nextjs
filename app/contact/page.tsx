@@ -24,7 +24,7 @@ const ContactPage = () => {
     ]
 
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-        // e.preventDefault();
+        e.preventDefault();
         const form = e.currentTarget;
 
         const response = await fetch("https://api.web3forms.com/submit", {
@@ -45,6 +45,7 @@ const ContactPage = () => {
         const result = await response.json();
         if (result.success) {
             console.log(result);
+            form.reset(); // Clear the form data
         }
     }
 
