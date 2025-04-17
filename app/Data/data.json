@@ -2,7 +2,8 @@
   "Header": [
     "home",
     "work",
-    "contact"
+    "contact",
+    "form"
   ],
   "intro": {
     "intro_para_1": "I'm a frontend developer, optimist, and tech enthusiast. I currently work as the software developer at Easebuzz, where I help develop the mobile applications and Payment Gateway frameworks, a multi-platform framework built with Swift.",
@@ -128,5 +129,17 @@
     "email": "Email",
     "message": "Message",
     "submit": "Submit"
-  }
+  },
+  "LinkCards": [
+    {
+      "card_title": "LinkedIN",
+      "card_desc": "Let's Connect",
+      "url": "https://www.linkedin.com/in/avi-jha"
+    },
+    {
+      "card_title": "Git-Hub",
+      "card_desc": "See my Projects",
+      "url": "https://github.com/avi-jha"
+    }
+  ]
 }

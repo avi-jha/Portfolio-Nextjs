@@ -6,7 +6,6 @@ import { FaNodeJs, FaReact } from "react-icons/fa";
 import { SiDjango, SiFlutter } from "react-icons/si";
 
 interface LanguageBoxProps {
-
   title: string;
 }
 

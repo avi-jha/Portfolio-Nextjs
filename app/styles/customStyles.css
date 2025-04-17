@@ -95,6 +95,6 @@
 }
 
 .required-field::after {
-  content: "*";
-  color: hsl(0, 0%, 100%);
+  content: " *";
+  color: hsl(0, 78%, 36%);
 }

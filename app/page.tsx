@@ -25,7 +25,7 @@ export default function Home() {
         </div>
 
         {/* body */}
-        <div className="m-4 md:m-12 mt-20 md:mt-20 ">
+        <div className="m-4 md:m-12 mt-20 md:mt-20">
           <p className="text-2xl">hey, i am Avi 👋🏻</p>
           <p className="mt-8 sm:text-sm leading-relaxed">{JsonData.intro.intro_para_1}</p>
         </div>
@@ -35,14 +35,13 @@ export default function Home() {
         <p className="text-sm leading-relaxed m-4 md:m-12 mt-10 md:mt-20">{JsonData.intro.intro_para_2}</p>
 
         <div className="m-4 md:m-12 mt-10 flex flex-col md:flex-row gap-4">
-          <LinksCard
-            card_title_1={"LinkedIN"}
-            card_title_2={"Let's Connect"}
-            url={"https://www.linkedin.com/in/avi-jha"} />
-          <LinksCard
-            card_title_1={"Git-Hub"}
-            card_title_2={"See my Projects"}
-            url={"https://github.com/avi-jha"} />
+          {JsonData.LinkCards.map((data, index) => (
+            <LinksCard
+              key={index}
+              card_title_1={data.card_title}
+              card_title_2={data.card_desc}
+              url={data.url} />
+          ))}
         </div>
 
         <p className="text-sm leading-relaxed m-4 md:m-12 mt-10 md:mt-20">{JsonData.intro.intro_para_3}</p>
