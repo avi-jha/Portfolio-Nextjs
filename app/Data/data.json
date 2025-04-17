@@ -2,8 +2,7 @@
   "Header": [
     "home",
     "work",
-    "contact",
-    "form"
+    "contact"
   ],
   "intro": {
     "intro_para_1": "I'm a frontend developer, optimist, and tech enthusiast. I currently work as the software developer at Easebuzz, where I help develop the mobile applications and Payment Gateway frameworks, a multi-platform framework built with Swift.",
