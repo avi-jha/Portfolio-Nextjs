@@ -20,7 +20,7 @@ const WorkComponent: React.FC<WorkComponentProps> = (props) => {
 
       <ul>
         {info_array.map((data, index) => (
-          <li className="mt-8 text-sm leading-relaxed" key={data + index}>
+          <li className="mt-8 ml-5 text-sm list-disc leading-relaxed" key={data + index}>
             {data}
           </li>
         ))}
