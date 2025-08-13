@@ -114,7 +114,7 @@ const ContactPage = () => {
 
                             {submitStatus === 'success' && (
                                 <div className="mt-4 p-3 bg-green-600 text-white rounded-lg">
-                                    ✓ Email sent successfully! I'll get back to you soon.
+                                    ✓ Email sent successfully! I&apos;ll get back to you soon.
                                 </div>
                             )}
 
