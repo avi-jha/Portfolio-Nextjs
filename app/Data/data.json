@@ -20,15 +20,10 @@
     }
   },
   "LanguageBox": [
-    "Python",
     "Django",
     "React Native",
-    "AWS",
     "Flutter",
-    "PostgreSQL",
-    "MySQL",
-    "Redis",
-    "REST APIs"
+    "React"
   ],
   "Work": {
     "work_para_1": "On a mission to build scalable, secure, and user-friendly software that solves real-world problems. Here's a snapshot of my work experience and impact so far."
