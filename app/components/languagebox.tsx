@@ -13,14 +13,15 @@ const LanguageBox: React.FC<LanguageBoxProps> = ({ title }) => {
   const renderIcon = () => {
     if (title == "Django") {
       return <SiDjango size={20} color="green" />
-    } else if (title == 'React') {
+    }
+    if (title == 'React Native') {
       return <FaReact size={20} color="cyan" />
     }
-    else if (title == 'Flutter') {
+    if (title == 'Flutter') {
       return <SiFlutter size={20} style={{ color: 'lightblue' }} />
     }
-    else if (title == 'Node') {
-      return <FaNodeJs size={20} style={{ color: 'lightgreen' }} />
+    if (title == 'React') {
+      return <FaReact size={20} style={{ color: 'lightgreen' }} />
     }
   }
 

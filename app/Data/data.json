@@ -2,6 +2,7 @@
   "Header": [
     "home",
     "work",
+    "blogs",
     "contact"
   ],
   "intro": {
@@ -20,10 +21,10 @@
     }
   },
   "LanguageBox": [
+    "React",
     "Django",
-    "React Native",
     "Flutter",
-    "React"
+    "React Native"
   ],
   "Work": {
     "work_para_1": "On a mission to build scalable, secure, and user-friendly software that solves real-world problems. Here's a snapshot of my work experience and impact so far."
@@ -67,36 +68,9 @@
   },
   "Blogs": [
     {
-      "title": "On Developer Marketing",
-      "views": "Aug 2024"
-    },
-    {
-      "title": "Next JS",
-      "views": "Jun 2024"
-    },
-    {
-      "title": "The Easebuzz experience",
-      "views": "Mar 2024"
-    },
-    {
-      "title": "FinTech - The new Tech",
-      "views": "Jan 2024"
-    },
-    {
-      "title": "Experimenting with React Native",
-      "views": "Feb 2023"
-    },
-    {
-      "title": "ePOS Application",
-      "views": "Sep 2022"
-    },
-    {
-      "title": "SDK?? How to develop a kit?",
-      "views": "Dec 2020"
-    },
-    {
-      "title": "MySQL or NoSQL",
-      "views": "Apr 2020"
+      "title": "JS Event Loop",
+      "views": "Jan 2026",
+      "fileName": "event_loop"
     }
   ],
   "Contact": [

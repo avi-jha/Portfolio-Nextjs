@@ -31,6 +31,7 @@ const Blogs = () => {
               key={`blog_${index}`}
               title={data.title}
               views={data.views}
+              fileName={data.fileName}
             />
           ))}
         </div>
