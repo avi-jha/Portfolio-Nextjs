@@ -1,30 +1,54 @@
 {
   "Header": [
     "home",
-    "work",
-    "blogs",
+    "about",
+    "tech",
+    "experience",
     "contact"
   ],
-  "intro": {
-    "intro_para_1": "I am Avinash Jha, a passionate Full Stack Developer based in Pune with expertise in Python, Django, React Native, and AWS. Over the past three years, I have delivered high-impact web and mobile solutions across the fintech sector, building scalable, secure, and automation-driven systems.",
-    "intro_para_2": "At Easebuzz, I engineered products that streamlined financial operations—developing centralized communication systems, advanced admin dashboards, automated KYC workflows, and integrated payment gateway solutions across multiple platforms. My work has powered over 7.5 million monthly interactions and improved operational efficiency for enterprises and SMEs.",
-    "intro_para_3": "Outside of my full-time role, I enjoy creating cross-platform apps, contributing to scalable product architectures, and working with diverse teams. I’m always open to impactful collaborations that challenge my problem-solving, architecture, and product design skills."
+  "hero": {
+    "greeting": "Hello, World! I'm",
+    "name": "Avinash Jha",
+    "typingTexts": [
+      "Full Stack Developer",
+      "Fintech Engineer",
+      "React Native Developer",
+      "Python & Django Expert",
+      "Cloud Architecture Enthusiast"
+    ],
+    "subtitle": "3+ years building mission-critical Fintech & SaaS platforms at scale.",
+    "cta_primary": "View My Work",
+    "cta_secondary": "Get In Touch"
   },
-  "DataCard": {
-    "title": {
-      "title_1": "What makes a great developer experience?",
-      "title_2": "Developer Conundrum"
-    },
-    "subtitle": {
-      "subtitle_1": "54,007 views",
-      "subtitle_2": "24,030 views"
-    }
+  "about": {
+    "paragraphs": [
+      "I am Avinash Jha, a passionate Full Stack Developer based in Pune with expertise in Python, Django, React Native, and AWS. Over the past three years, I have delivered high-impact web and mobile solutions across the fintech sector, building scalable, secure, and automation-driven systems.",
+      "At Easebuzz, I engineered products that streamlined financial operations—developing centralized communication systems, advanced admin dashboards, automated KYC workflows, and integrated payment gateway solutions across multiple platforms. My work has powered over 7.5 million monthly interactions and improved operational efficiency for enterprises and SMEs."
+    ],
+    "stats": [
+      { "value": "3+", "label": "Years Experience" },
+      { "value": "3", "label": "Companies" },
+      { "value": "10+", "label": "Projects Shipped" }
+    ]
   },
-  "LanguageBox": [
-    "React",
-    "Django",
-    "Flutter",
-    "React Native"
+  "socialLinks": [
+    { "name": "LinkedIn", "url": "https://www.linkedin.com/in/avi-jha", "icon": "linkedin" },
+    { "name": "GitHub", "url": "https://github.com/avi-jha", "icon": "github" },
+    { "name": "Email", "url": "mailto:avinashbhaskarjha@gmail.com", "icon": "email" }
+  ],
+  "TechStack": [
+    { "name": "Python", "color": "#3776AB" },
+    { "name": "Django", "color": "#092E20" },
+    { "name": "React", "color": "#61DAFB" },
+    { "name": "React Native", "color": "#61DAFB" },
+    { "name": "Next.js", "color": "#ffffff" },
+    { "name": "TypeScript", "color": "#3178C6" },
+    { "name": "Node.js", "color": "#339933" },
+    { "name": "Flutter", "color": "#02569B" },
+    { "name": "PostgreSQL", "color": "#4169E1" },
+    { "name": "AWS", "color": "#FF9900" },
+    { "name": "Docker", "color": "#2496ED" },
+    { "name": "Kafka", "color": "#231F20" }
   ],
   "Work": {
     "work_para_1": "On a mission to build scalable, secure, and user-friendly software that solves real-world problems. Here's a snapshot of my work experience and impact so far."
@@ -32,7 +56,8 @@
   "Experience": {
     "Current": {
       "company": "Easebuzz Pvt. Ltd.",
-      "title": "Full Stack Software Developer Engineer",
+      "title": "Full Stack Software Development Engineer",
+      "period": "2022 — Present",
       "info_para_1": "Joined Easebuzz in 2022, contributing to web, mobile, and API development across multiple fintech products. Collaborated with cross-functional teams to deliver scalable features, optimize workflows, and enhance customer experience.",
       "job_points": [
         "Developed a centralized communication system in Django with AWS and third-party APIs (SMS, WhatsApp, Email, Webhooks, OBD Calls, Push Notifications), driving 7.5M+ monthly interactions.",
@@ -40,7 +65,7 @@
         "Revamped a semi-automated KYC workflow handling 1000+ cases/day, reducing manual processing and providing real-time merchant onboarding updates.",
         "Integrated Netbanking, Wallet, and EMI payment modes into the Easebuzz Payment Gateway ecosystem.",
         "Built Payment Gateway SDKs for iOS, Android, React Native, Flutter, Cordova, and Ionic.",
-        "Integrated HDFC Plugin and Gateway, creating the company’s first PSP application.",
+        "Integrated HDFC Plugin and Gateway, creating the company's first PSP application.",
         "Implemented Chatbot and NPS survey integrations, generating 400+ monthly leads.",
         "Created and deployed Easebuzz ePOS cross-platform app (5000+ downloads)."
       ],
@@ -50,6 +75,7 @@
       {
         "prev_job": "Easebuzz Pvt. Ltd.",
         "prev_title": "Intern",
+        "period": "2021 — 2022",
         "prev_job_info": [
           "Integrated APIs for merchant verification (Aadhar, PAN, Bank, GST), improving accuracy and compliance.",
           "Contributed to the Easebuzz Appstore, a subscription-based platform for merchant productivity tools.",
@@ -59,6 +85,7 @@
       {
         "prev_job": "Tipsy (Freelance Project)",
         "prev_title": "Content Producer & Product Manager",
+        "period": "2020 — 2021",
         "prev_job_info": [
           "Developed an alcohol delivery application connecting customers with shopkeepers across Mumbai.",
           "Collaborated with over 20 local businesses, handling both tech and business outreach."
@@ -73,16 +100,11 @@
       "fileName": "event_loop"
     }
   ],
-  "Contact": [
-    "Name",
-    "Email",
-    "Message"
-  ],
-  "Form": {
-    "name": "Name",
-    "email": "Email",
-    "message": "Message",
-    "submit": "Submit"
+  "Contact": {
+    "heading": "Get In Touch",
+    "subtitle": "Have a project in mind or just want to chat? I'd love to hear from you.",
+    "email": "avinashbhaskarjha@gmail.com",
+    "phone": "+91 6387796299"
   },
   "LinkCards": [
     {
