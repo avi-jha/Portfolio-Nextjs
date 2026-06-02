@@ -1,29 +1,53 @@
-import Link from 'next/link'
-import React from 'react'
-import JsonData from '../Data/data.json'
+"use client";
 
-function Navbar() {
-    return (
-        <div className="flex flex-row items-center justify-between sm:justify-between py-8 max-w-5xl mx-auto relative z-[100]">
-            {/* fiest part */}
-            <div className="hidden lg:flex w-full justify-between">
-                <ul className="flex flex-wrap md:flex-row border border-radius rounded-md pr-4 pt-2 pb-2">
-                    {JsonData.Header.map((data, index) => (
-                        <li className="px-4" key={index + data}>
-                            {/* TODO: add "Blogs" on nav bar */}
-                            <Link href={data === "home" ? "/" : `/${data}`}>
-                                {data}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-            </div>
+import React, { useState, useEffect } from "react";
+import JsonData from "../Data/data.json";
 
-            {/* download button */}
-            <div>
-            </div>
-        </div>
-    )
+export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    setMenuOpen(false);
+    const target = document.getElementById(id);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
+    <nav className={`navbar ${scrolled ? "scrolled" : ""}`} id="navbar">
+      <a href="#home" className="nav-logo" onClick={(e) => handleNavClick(e, "home")}>
+        Avi<span>Jha</span>
+      </a>
+      <ul className={`nav-menu ${menuOpen ? "open" : ""}`}>
+        {JsonData.Header.map((item) => (
+          <li key={item}>
+            <a
+              href={`#${item}`}
+              onClick={(e) => handleNavClick(e, item)}
+            >
+              {item}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <button
+        className="menu-toggle"
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Toggle menu"
+      >
+        {menuOpen ? "✕" : "☰"}
+      </button>
+    </nav>
+  );
 }
-
-export default Navbar
