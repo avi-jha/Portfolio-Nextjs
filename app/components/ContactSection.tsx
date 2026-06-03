@@ -29,7 +29,7 @@ export default function ContactSection() {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: "d49ad116-d70f-4dbc-8f95-bcec3dae180a",
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
           name: (form.elements.namedItem("name") as HTMLInputElement).value,
           email: (form.elements.namedItem("email") as HTMLInputElement).value,
           message: (form.elements.namedItem("message") as HTMLTextAreaElement)

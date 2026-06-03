@@ -2,6 +2,7 @@ import React from "react";
 import JsonData from "../Data/data.json";
 import SectionTitle from "./SectionTitle";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import MY_PIC from '../assets/my_pic.jpeg'
 
 const iconMap: Record<string, React.ReactNode> = {
   linkedin: <FaLinkedin size={18} />,
@@ -29,7 +30,7 @@ export default function AboutSection() {
               color: "rgba(255,255,255,0.15)",
             }}
           >
-            AJ
+            <img src={MY_PIC.src} alt="" />
           </div>
         </div>
 
